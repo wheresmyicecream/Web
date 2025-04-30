@@ -1,14 +1,57 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Contacto - Plaza Norte 2</title>
-</head>
-<body>
+<section class="registration-form">
+    <h2>Regístrate</h2>
+    <p>Completa el siguiente formulario para acceder</p>
 
-    <h1>Formulario de Contacto</h1>
+    <form action="mi-mail.php" method="post" id="registroForm">
 
-  aqui
+        <div class="fila flex">
+            <div class="columna flex">Nombre y apellidos *
+                <input type="text" name="nombre" required>
+            </div>
+        </div>
 
-</body>
-</html>
+        <div class="fila flex">
+            <div class="columna flex">Edad *
+                <input type="number" name="edad" min="18" required>
+            </div>
+        </div>
+
+        <div class="fila flex">
+            <div class="columna flex">Dirección completa *
+                <input type="text" name="direccion" required>
+            </div>
+        </div>
+
+        <div class="fila flex">
+            <div class="columna flex">NIF *
+                <input type="text" name="nif" required>
+            </div>
+        </div>
+
+        <div class="fila flex">
+            <div class="columna flex">Email *
+                <input type="email" name="email" required>
+            </div>
+        </div>
+
+        <div class="fila flex">
+            <div class="columna flex">Teléfono *
+                <input type="tel" name="telefono" required pattern="[0-9]{9}">
+            </div>
+        </div>
+
+        <div class="fila flex">
+            <div class="columna flex">
+                <input type="checkbox" name="condiciones" required>
+                Acepto las <a href="aviso-legal.html">condiciones de uso</a> *
+            </div>
+        </div>
+
+        <div class="fila flex">
+            <div class="columna flex">
+                <button type="submit">Registrarse</button>
+            </div>
+        </div>
+
+    </form>
+</section>
