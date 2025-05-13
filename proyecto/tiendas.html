@@ -1,66 +1,198 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Tiendas - Plaza Norte 2</title>
+  <meta charset="UTF-8">
+  <title>Tiendas - Plaza Norte 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="tiendas.ico" type="image/x-icon">
+  <!-- Bootstrap CSS y JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
+  <div class="container text-center my-4">
     <h1>Tiendas</h1>
+    <section class="row row-cols-2 row-cols-md-3 g-4">
+      <article class="col">
+        <img src="logo-tienda1.png" alt="Bershka" class="img-fluid" role="button" data-bs-toggle="modal" data-bs-target="#modal1">
+      </article>
+      <article class="col">
+        <img src="logo-tienda2.png" alt="Pull and Bear" class="img-fluid" role="button" data-bs-toggle="modal" data-bs-target="#modal2">
+      </article>
+      <article class="col">
+        <img src="logo-tienda3.png" alt="Lefties" class="img-fluid" role="button" data-bs-toggle="modal" data-bs-target="#modal3">
+      </article>
+      <article class="col">
+        <img src="logo-tienda4.png" alt="Stradivarius" class="img-fluid" role="button" data-bs-toggle="modal" data-bs-target="#modal4">
+      </article>
+      <article class="col">
+        <img src="logo-tienda5.png" alt="Zara" class="img-fluid" role="button" data-bs-toggle="modal" data-bs-target="#modal5">
+      </article>
+      <article class="col">
+        <img src="logo-tienda6.png" alt="Springfield" class="img-fluid" role="button" data-bs-toggle="modal" data-bs-target="#modal6">
+      </article>
+    </section>
+  </div>
 
-<section>
-  <article>
-    <img src="logo-tienda1.png" alt="Bershka" onclick="abrirModal('modal1')">
-  </article>
-  <article>
-    <img src="logo-tienda2.png" alt="Pull and Bear" onclick="abrirModal('modal2')">
-  </article>
-  <article>
-    <img src="logo-tienda3.png" alt="Lefties" onclick="abrirModal('modal3')">
-  </article>
-  <article>
-    <img src="logo-tienda4.png" alt="Stradivarius" onclick="abrirModal('modal4')">
-  </article>
-  <article>
-    <img src="logo-tienda5.png" alt="Zara" onclick="abrirModal('modal5')">
-  </article>
-  <article>
-    <img src="logo-tienda6.png" alt="Springfield" onclick="abrirModal('modal6')">
-  </article>
-</section>
+  <!-- Modal Template -->
+  <!-- Solo debes copiar este bloque cambiando IDs y contenido -->
 
-<!-- Modales -->
-<div id="modal1">
-  <img src="tienda1.jpg" alt="Interior Bershka">
-  <p>Ropa joven, moderna y urbana para todos los gustos.</p>
-  <a href="https://www.bershka.com">Visitar sitio oficial</a>
-</div>
-<div id="modal2">
-  <img src="tienda2.jpg" alt="Interior Pull and Bear">
-  <p>Estilo casual con toques modernos y desenfadados.</p>
-  <a href="https://www.pullandbear.com">Visitar sitio oficial</a>
-</div>
-<div id="modal3">
-  <img src="tienda3.jpg" alt="Interior Lefties">
-  <p>Moda asequible y actual para todas las edades.</p>
-  <a href="https://www.lefties.com">Visitar sitio oficial</a>
-</div>
-<div id="modal4">
-  <img src="tienda4.jpg" alt="Interior Stradivarius">
-  <p>Moda femenina con estilo y personalidad.</p>
-  <a href="https://www.stradivarius.com">Visitar sitio oficial</a>
-</div>
-<div id="modal5">
-  <img src="tienda5.jpg" alt="Interior Zara">
-  <p>Últimas tendencias en moda internacional para mujer y hombre.</p>
-  <a href="https://www.zara.com">Visitar sitio oficial</a>
-</div>
-<div id="modal6">
-  <img src="tienda6.jpg" alt="Interior Springfield">
-  <p>Moda urbana cómoda y funcional para el día a día.</p>
-  <a href="https://www.myspringfield.com">Visitar sitio oficial</a>
-</div>
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h5 class="modal-title">Bershka</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carousel1" class="carousel slide mb-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="tienda1.jpg" class="d-block w-100" alt="Interior Bershka">
+              </div>
+            </div>
+          </div>
+          <p><strong>Tipo:</strong> Moda joven, moderna y urbana.</p>
+          <p><strong>Productos destacados:</strong> Jeans desgastados, tops crop, calzado chunky.</p>
+          <p><strong>Horario:</strong> Lunes a domingo, de 10:00 a 22:00.</p>
+          <p><strong>Ubicación:</strong> Planta baja, ala norte.</p>
+          <a href="https://www.bershka.com" target="_blank">Visitar sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h5 class="modal-title">Pull and Bear</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carousel2" class="carousel slide mb-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="tienda2.jpg" class="d-block w-100" alt="Interior Pull and Bear">
+              </div>
+            </div>
+          </div>
+          <p><strong>Tipo:</strong> Moda casual con toques modernos y desenfadados.</p>
+          <p><strong>Productos destacados:</strong> Sudaderas oversize, zapatillas urbanas, camisetas gráficas.</p>
+          <p><strong>Horario:</strong> Lunes a domingo, de 10:00 a 22:00.</p>
+          <p><strong>Ubicación:</strong> Planta baja, junto a Bershka.</p>
+          <a href="https://www.pullandbear.com" target="_blank">Visitar sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h5 class="modal-title">Lefties</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carousel3" class="carousel slide mb-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="tienda3.jpg" class="d-block w-100" alt="Interior Lefties">
+              </div>
+            </div>
+          </div>
+          <p><strong>Tipo:</strong> Moda asequible y actual para todas las edades.</p>
+          <p><strong>Productos destacados:</strong> Básicos, ropa deportiva, complementos económicos.</p>
+          <p><strong>Horario:</strong> Lunes a domingo, de 10:00 a 22:00.</p>
+          <p><strong>Ubicación:</strong> Planta alta, ala sur.</p>
+          <a href="https://www.lefties.com" target="_blank">Visitar sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h5 class="modal-title">Stradivarius</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carousel4" class="carousel slide mb-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="tienda4.jpg" class="d-block w-100" alt="Interior Stradivarius">
+              </div>
+            </div>
+          </div>
+          <p><strong>Tipo:</strong> Moda femenina con estilo y personalidad.</p>
+          <p><strong>Productos destacados:</strong> Vestidos fluidos, blazers, bolsos trendy.</p>
+          <p><strong>Horario:</strong> Lunes a domingo, de 10:00 a 22:00.</p>
+          <p><strong>Ubicación:</strong> Planta baja, ala este.</p>
+          <a href="https://www.stradivarius.com" target="_blank">Visitar sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="modal fade" id="modal5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h5 class="modal-title">Zara</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carousel5" class="carousel slide mb-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="tienda5.jpg" class="d-block w-100" alt="Interior Zara">
+              </div>
+            </div>
+          </div>
+          <p><strong>Tipo:</strong> Últimas tendencias en moda internacional para mujer, hombre y niños.</p>
+          <p><strong>Productos destacados:</strong> Blazers estructurados, zapatos de piel, abrigos premium.</p>
+          <p><strong>Horario:</strong> Lunes a domingo, de 10:00 a 22:00.</p>
+          <p><strong>Ubicación:</strong> Planta baja, zona central.</p>
+          <a href="https://www.zara.com" target="_blank">Visitar sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="modal fade" id="modal6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h5 class="modal-title">Springfield</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carousel6" class="carousel slide mb-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="tienda6.jpg" class="d-block w-100" alt="Interior Springfield">
+              </div>
+            </div>
+          </div>
+          <p><strong>Tipo:</strong> Moda urbana cómoda y funcional para el día a día.</p>
+          <p><strong>Productos destacados:</strong> Camisas casual, pantalones chinos, chaquetas ligeras.</p>
+          <p><strong>Horario:</strong> Lunes a domingo, de 10:00 a 22:00.</p>
+          <p><strong>Ubicación:</strong> Planta alta, junto a Lefties.</p>
+          <a href="https://www.myspringfield.com" target="_blank">Visitar sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
-
