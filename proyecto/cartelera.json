@@ -1,0 +1,39 @@
+[
+    {
+        "titulo": "Until Dawn",
+        "info": "Terror · 92 min",
+        "cartel": "./peli1.jpg",
+        "enlace": "https://yelmocines.es/sinopsis/until-dawn"
+    },
+    {
+        "titulo": "Enemigos",
+        "info": "Drama · 110 min",
+        "cartel": "peli2.jpg",
+        "enlace": "https://www.yelmocines.es/sinopsis/enemigos"
+    },
+    {
+        "titulo": "Los Pecadores",
+        "info": "Thriller · 97 min",
+        "cartel": "peli3.jpg",
+        "enlace": "https://www.yelmocines.es/sinopsis/los-pecadores"
+    },
+    {
+        "titulo": "Una Película de Minecraft",
+        "info": "Aventura, Familiar · 95 min",
+        "cartel": "peli4.jpg",
+        "enlace": "https://www.yelmocines.es/sinopsis/una-pelicula-de-minecraft"
+    },
+    {
+        "titulo": "Kayara, la Guerrera del Imperio Inca",
+        "info": "Animación, Aventura · 90 min",
+        "cartel": "peli5.jpg",
+        "enlace": "https://www.yelmocines.es/sinopsis/kayara-la-guerrera-del-imperio-inca"
+    },
+    {
+        "titulo": "Kaiju No. 8: Misión de Reconocimiento",
+        "info": "Animación, Ciencia ficción · 89 min",
+        "cartel": "peli6.jpg",
+        "enlace": "https://www.yelmocines.es/sinopsis/kaiju-no-8-mision-de-reconocimiento"
+    }
+]
+
