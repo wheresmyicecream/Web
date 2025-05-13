@@ -1,0 +1,20 @@
+h1 {
+    font-family: 'Nunito', sans-serif;
+
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; 
+
+}
+
+p {
+    font-family: 'Merriweather', serif;
+
+}
+
+
+body {
+    font-family: 'Merriweather', serif; /* Base para todo el texto */
+}
