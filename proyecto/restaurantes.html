@@ -1,58 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>Restaurantes - Plaza Norte 2</title>
   <link rel="icon" href="restaurantes.ico" type="image/x-icon">
-  
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <style>
-    .rest-logo {
-      cursor: pointer;
-      text-align: center;
-    }
+  <!-- Tu CSS externo -->
+  <link rel="stylesheet" href="restaurantes.css">
 
-    .rest-logo img {
+  <style>
+    .logo-restaurante {
       width: 100px;
-      height: auto;
+      height: 100px;
       object-fit: contain;
       margin-bottom: 10px;
-    }
-
-    .modal-custom {
-      position: fixed;
-      top: 0;
-      left: 0;
-      background: rgba(0,0,0,0.8);
-      width: 100%;
-      height: 100%;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 1050;
-    }
-
-    .modal-content-custom {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 600px;
-      width: 90%;
-      text-align: center;
-    }
-
-    .modal-custom img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    .carousel img {
-      max-height: 300px;
-      object-fit: cover;
     }
   </style>
 </head>
@@ -62,54 +28,91 @@
   <div class="container py-4">
     <h1 class="text-center mb-4">Restaurantes</h1>
 
-    <div class="row text-center">
-      <!-- 6 restaurantes -->
-      <div class="col-md-4 rest-logo" onclick="abrirModal('modal1')">
-        <img src="logo-rest1.png" alt="Casa Carmen">
-        <p><strong>Casa Carmen</strong><br>Mediterránea moderna<br>12:00 - 00:00<br>Planta alta - Cines</p>
+    <section class="container my-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-3 border rounded text-center">
+            <img src="logo-rest1.png" alt="" class="logo-restaurante">
+            <p><strong>Cocina:</strong> Mediterránea con toque moderno</p>
+            <p><strong>Especialidades:</strong> Arroz meloso y Solomillo al foie</p>
+            <p><strong>Horario:</strong> 12:00 – 00:00 (Lunes – Domingo)</p>
+            <p><strong>Ubicación:</strong> Planta alta, junto a los cines</p>
+            <a href="https://www.grupocasacarmen.com" target="_blank">Sitio oficial – Casa Carmen ©</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border rounded text-center">
+            <img src="logo-rest2.png" alt="" class="logo-restaurante">
+            <p><strong>Cocina:</strong> Italiana tradicional</p>
+            <p><strong>Especialidades:</strong> Pizza de trufa y Pasta al pesto</p>
+            <p><strong>Horario:</strong> 13:00 – 23:30 (Lunes – Domingo)</p>
+            <p><strong>Ubicación:</strong> Planta baja, zona central</p>
+            <a href="https://www.latagliatella.es" target="_blank">Sitio oficial – La Tagliatella ©</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border rounded text-center">
+            <img src="logo-rest3.png" alt="" class="logo-restaurante">
+            <p><strong>Cocina:</strong> Asiática moderna</p>
+            <p><strong>Especialidades:</strong> Noodles Yakisoba y Gyozas de pollo</p>
+            <p><strong>Horario:</strong> 12:00 – 23:00 (Lunes – Domingo)</p>
+            <p><strong>Ubicación:</strong> Planta alta, pasillo este</p>
+            <a href="https://www.udon.com" target="_blank">Sitio oficial – Udon ©</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border rounded text-center">
+            <img src="logo-rest4.png" alt="" class="logo-restaurante">
+            <p><strong>Cocina:</strong> Española, tapas</p>
+            <p><strong>Especialidades:</strong> Montaditos y jarras de cerveza</p>
+            <p><strong>Horario:</strong> 11:00 – 23:00 (Lunes – Domingo)</p>
+            <p><strong>Ubicación:</strong> Planta baja, entrada sur</p>
+            <a href="https://spain.100montaditos.com" target="_blank">Sitio oficial – 100Montaditos ©</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border rounded text-center">
+            <img src="logo-rest5.png" alt="" class="logo-restaurante">
+            <p><strong>Cocina:</strong> Yogur helado</p>
+            <p><strong>Especialidades:</strong> Toppings y siropes</p>
+            <p><strong>Horario:</strong> 10:00 – 22:00 (Lunes – Domingo)</p>
+            <p><strong>Ubicación:</strong> Planta baja, zona postres</p>
+            <a href="https://www.llaollaoweb.com" target="_blank">Sitio oficial – Llaollao ©</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border rounded text-center">
+            <img src="logo-rest6.png" alt="" class="logo-restaurante">
+            <p><strong>Cocina:</strong> Donuts y café</p>
+            <p><strong>Especialidades:</strong> Donuts glaseados y Café espresso</p>
+            <p><strong>Horario:</strong> 9:00 – 22:00 (Lunes – Domingo)</p>
+            <p><strong>Ubicación:</strong> Planta baja, frente a Zara</p>
+            <a href="https://www.dunkin.es" target="_blank">Sitio oficial – Dunkin Donuts ©</a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4 rest-logo" onclick="abrirModal('modal2')">
-        <img src="logo-rest2.png" alt="La Tagliatella">
-        <p><strong>La Tagliatella</strong><br>Italiana tradicional<br>13:00 - 23:30<br>Planta baja - Zona central</p>
-      </div>
-      <div class="col-md-4 rest-logo" onclick="abrirModal('modal3')">
-        <img src="logo-rest3.png" alt="Udon">
-        <p><strong>Udon</strong><br>Asiática moderna<br>12:00 - 23:00<br>Planta alta - Pasillo este</p>
-      </div>
-      <div class="col-md-4 rest-logo" onclick="abrirModal('modal4')">
-        <img src="logo-rest4.png" alt="100 Montaditos">
-        <p><strong>100 Montaditos</strong><br>Tapas españolas<br>11:00 - 23:00<br>Planta baja - Entrada sur</p>
-      </div>
-      <div class="col-md-4 rest-logo" onclick="abrirModal('modal5')">
-        <img src="logo-rest5.png" alt="Llaollao">
-        <p><strong>Llaollao</strong><br>Yogur helado<br>10:00 - 22:00<br>Planta baja - Zona postres</p>
-      </div>
-      <div class="col-md-4 rest-logo" onclick="abrirModal('modal6')">
-        <img src="logo-rest6.png" alt="Dunkin">
-        <p><strong>Dunkin</strong><br>Donuts y café<br>09:00 - 22:00<br>Planta baja - Frente a Zara</p>
-      </div>
-    </div>
+    </section>
 
-    <!-- Carrusel inferior -->
+    <!-- Carrusel -->
     <div id="carouselRestaurantes" class="carousel slide mt-5" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="rest1.jpg" class="d-block w-100" alt="Restaurante 1">
+          <img src="rest1.jpg" class="d-block w-100 carousel-img" alt="Restaurante 1">
         </div>
         <div class="carousel-item">
-          <img src="rest2.jpg" class="d-block w-100" alt="Restaurante 2">
+          <img src="rest2.jpg" class="d-block w-100 carousel-img" alt="Restaurante 2">
         </div>
         <div class="carousel-item">
-          <img src="rest3.jpg" class="d-block w-100" alt="Restaurante 3">
+          <img src="rest3.jpg" class="d-block w-100 carousel-img" alt="Restaurante 3">
         </div>
         <div class="carousel-item">
-          <img src="rest4.jpg" class="d-block w-100" alt="Restaurante 4">
+          <img src="rest4.jpg" class="d-block w-100 carousel-img" alt="Restaurante 4">
         </div>
         <div class="carousel-item">
-          <img src="rest5.jpg" class="d-block w-100" alt="Restaurante 5">
+          <img src="rest5.jpg" class="d-block w-100 carousel-img" alt="Restaurante 5">
         </div>
         <div class="carousel-item">
-          <img src="rest6.jpg" class="d-block w-100" alt="Restaurante 6">
+          <img src="rest6.jpg" class="d-block w-100 carousel-img" alt="Restaurante 6">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselRestaurantes" data-bs-slide="prev">
@@ -118,73 +121,6 @@
       <button class="carousel-control-next" type="button" data-bs-target="#carouselRestaurantes" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
       </button>
-    </div>
-  </div>
-
-  <!-- Modales personalizados -->
-  <div id="modal1" class="modal-custom" onclick="cerrarModal(this)">
-    <div class="modal-content-custom" onclick="event.stopPropagation()">
-      <img src="rest1.jpg" alt="Casa Carmen">
-      <p><strong>Cocina:</strong> Mediterránea con un toque moderno.</p>
-      <p><strong>Especialidades:</strong> Arroz meloso, croquetas caseras y solomillo al foie.</p>
-      <p><strong>Horario:</strong> Lunes a domingo, de 12:00 a 00:00.</p>
-      <p><strong>Ubicación:</strong> Planta alta, junto a los cines.</p>
-      <a href="https://www.grupocasacarmen.com" target="_blank">Visitar sitio oficial</a>
-    </div>
-  </div>
-
-  <div id="modal2" class="modal-custom" onclick="cerrarModal(this)">
-    <div class="modal-content-custom" onclick="event.stopPropagation()">
-      <img src="rest2.jpg" alt="La Tagliatella">
-      <p><strong>Cocina:</strong> Italiana tradicional.</p>
-      <p><strong>Especialidades:</strong> Pizza de trufa, pasta al pesto genovés, lasaña boloñesa.</p>
-      <p><strong>Horario:</strong> Lunes a domingo, de 13:00 a 23:30.</p>
-      <p><strong>Ubicación:</strong> Planta baja, zona central.</p>
-      <a href="https://www.latagliatella.es" target="_blank">Visitar sitio oficial</a>
-    </div>
-  </div>
-
-  <div id="modal3" class="modal-custom" onclick="cerrarModal(this)">
-    <div class="modal-content-custom" onclick="event.stopPropagation()">
-      <img src="rest3.jpg" alt="Udon">
-      <p><strong>Cocina:</strong> Asiática moderna y saludable.</p>
-      <p><strong>Especialidades:</strong> Noodles Yakisoba, Ramen Tonkotsu, Gyozas de pollo.</p>
-      <p><strong>Horario:</strong> Lunes a domingo, de 12:00 a 23:00.</p>
-      <p><strong>Ubicación:</strong> Planta alta, pasillo este.</p>
-      <a href="https://www.udon.com" target="_blank">Visitar sitio oficial</a>
-    </div>
-  </div>
-
-  <div id="modal4" class="modal-custom" onclick="cerrarModal(this)">
-    <div class="modal-content-custom" onclick="event.stopPropagation()">
-      <img src="rest4.jpg" alt="100 Montaditos">
-      <p><strong>Cocina:</strong> Española, tapas y bocadillos.</p>
-      <p><strong>Especialidades:</strong> Montaditos variados, jarras de cerveza fría, aceitunas aliñadas.</p>
-      <p><strong>Horario:</strong> Lunes a domingo, de 11:00 a 23:00.</p>
-      <p><strong>Ubicación:</strong> Planta baja, junto a la entrada sur.</p>
-      <a href="https://spain.100montaditos.com" target="_blank">Visitar sitio oficial</a>
-    </div>
-  </div>
-
-  <div id="modal5" class="modal-custom" onclick="cerrarModal(this)">
-    <div class="modal-content-custom" onclick="event.stopPropagation()">
-      <img src="rest5.jpg" alt="Llaollao">
-      <p><strong>Cocina:</strong> Yogur helado natural.</p>
-      <p><strong>Especialidades:</strong> Toppings de frutas frescas, sirope de chocolate, crunch de galleta.</p>
-      <p><strong>Horario:</strong> Lunes a domingo, de 10:00 a 22:00.</p>
-      <p><strong>Ubicación:</strong> Planta baja, zona de postres y cafés.</p>
-      <a href="https://www.llaollaoweb.com" target="_blank">Visitar sitio oficial</a>
-    </div>
-  </div>
-
-  <div id="modal6" class="modal-custom" onclick="cerrarModal(this)">
-    <div class="modal-content-custom" onclick="event.stopPropagation()">
-      <img src="rest6.jpg" alt="Dunkin">
-      <p><strong>Cocina:</strong> Donuts y café americano.</p>
-      <p><strong>Especialidades:</strong> Donuts glaseados, café espresso, frappés y bagels.</p>
-      <p><strong>Horario:</strong> Lunes a domingo, de 9:00 a 22:00.</p>
-      <p><strong>Ubicación:</strong> Planta baja, frente a Zara.</p>
-      <a href="https://www.dunkin.es" target="_blank">Visitar sitio oficial</a>
     </div>
   </div>
 
@@ -198,4 +134,5 @@
     }
   </script>
 </body>
+
 </html>
