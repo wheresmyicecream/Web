@@ -145,11 +145,20 @@ a {
     padding-bottom: 0;
 }
 
+/* IMAGENES EN CARTELERA*/
+.card {
+  height: 450px; /* o ajusta esta altura según tu diseño */
+}
+
+.card-img-top {
+  height: 80%;
+  object-fit: cover;
+}
+
 /* Asegurar que no haya overflow horizontal */
 body {
     overflow-x: hidden;
 }
-
 
   /* Color para la barra de navegación */
   .navbar {
