@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,7 +88,8 @@
     </section>
 
 
-    <h2 class="mt-5">Cartelera</h2>
+    <div class="container mt-5">
+      <h2>Cartelera</h2>
 
     <div class="row" id="peliculas">
       <script>
@@ -119,7 +119,7 @@
             "enlace": "https://www.yelmocines.es/sinopsis/una-pelicula-de-minecraft"
           },
           {
-            "titulo": "Kayara: Guerrera Imperio Inca",
+            "titulo": "Kayara: Imperio Inca",
             "info": "Animación, Aventura · 90 min",
             "cartel": "peli5.jpg",
             "enlace": "https://www.yelmocines.es/sinopsis/kayara-la-guerrera-del-imperio-inca"
@@ -139,7 +139,7 @@
           col.classList.add("col-md-4", "mb-4");
 
           col.innerHTML = `
-                <div class="card h-100">
+                <div class="card h-100 d-flex flex-column">
                     <img src="${pelicula.cartel}" class="card-img-top" alt="${pelicula.titulo}">
                     <div class="card-body">
                         <h3 class="card-title">${pelicula.titulo}</h3>
@@ -153,6 +153,7 @@
         });
       </script>
     </div>
+  </div>
   </div>
 
   <!-- Bootstrap JS -->

@@ -1,8 +1,14 @@
 /* Fuentes generales */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /* TITULOS */
 h1 {
-    font-family: 'Merriweather', serif; 
-    padding: 30px; 
+    font-family: 'Merriweather', serif;
+    padding: 30px;
 }
 
 /* SUBTITULOS */
@@ -147,12 +153,180 @@ a {
 
 /* IMAGENES EN CARTELERA*/
 .card {
-  height: 450px; /* o ajusta esta altura según tu diseño */
+    max-height: 650px;
+}
+
+.card-body {
+    max-height: 100%;
 }
 
 .card-img-top {
-  height: 80%;
-  object-fit: cover;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+
+/* Fuentes generales */
+/* TITULOS */
+h1 {
+    font-family: 'Merriweather', serif;
+    padding: 30px;
+}
+
+/* SUBTITULOS */
+h2 {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* TEXTOS */
+p {
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 30px;
+}
+
+/* Botones*/
+button {
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.btn-custom {
+    background-color: #6c757d;
+    color: white;
+    width: 100%;
+    height: 90px;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.btn-custom:hover {
+    background-color: lightslategray;
+    color: white;
+}
+
+/* Estilos para enlaces*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ESTILOS DE LOGOS */
+.rest-logo {
+    cursor: pointer;
+    text-align: center;
+}
+
+.rest-logo img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Cajas modales y estilos */
+.modal-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+}
+
+.modal-content-custom {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+.modal-content-custom p {
+    padding-bottom: 0;
+}
+
+.modal-custom img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Modificaciones para carrousel */
+.carousel {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.carousel-inner {
+    width: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+/* Estilos para los textos del carrusel */
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.carousel-caption h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 0;
+}
+
+/* IMAGENES EN CARTELERA*/
+.card {
+    max-height: 650px;
+}
+
+.card-body {
+    max-height: 100%;
+}
+
+.card-img-top {
+    height: 500px;
+    object-fit: cover;
 }
 
 /* Asegurar que no haya overflow horizontal */
@@ -160,25 +334,491 @@ body {
     overflow-x: hidden;
 }
 
-  /* Color para la barra de navegación */
-  .navbar {
+/* Color para la barra de navegación */
+.navbar {
     background-color: #2c3e50;
-  }
-  
-  /* Ajustes para la barra de navegación */
-  .navbar-brand,
-  .navbar-brand:hover,
-  .nav-link,
-  .nav-link:hover {
+}
+
+/* Ajustes para la barra de navegación */
+.navbar-brand,
+.navbar-brand:hover,
+.nav-link,
+.nav-link:hover {
     color: #ecf0f1;
-  }
-  
-  .navbar-toggler {
+}
+
+.navbar-toggler {
     color: #ecf0f1;
     border-color: #ecf0f1;
+}
+
+#footer {
+    background-color: #415b76;
+}
+
+/* FORMULARIO */
+.contact-form {
+    max-width: 700px;
+    margin: 60px auto;
+    background-color: #fff;
+    padding: 50px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+button[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.titulo-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 60px 20px 30px;
+    gap: 20px;
+}
+
+.titulo-contacto .linea {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+}
+
+.titulo-contacto .contenido {
+    text-align: center;
+}
+
+.titulo-contacto h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.titulo-contacto p {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 16px;
+    margin: 4px 0 0;
+    color: #444;
+}
+
+.icono-contacto {
+    font-size: 2rem;
+    color: #000;
+    margin-right: 10px;
+}
+
+/* Botón especial para Contacto en el header */
+.contacto-nav {
+    border: 1px solid #2c3e50 !important;
+    /* Contorno fino y color #2c3e50 */
+    color: #2c3e50 !important;
+    background: transparent;
+    border-radius: 2rem !important;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    font-weight: 700;
+}
+
+.contacto-nav:hover,
+.contacto-nav:focus {
+    background: #2c3e50 !important;
+    color: #fff !important;
+    border-color: #2c3e50 !important;
+    text-decoration: none;
+}
+
+/* Animación de subrayado para enlaces del header */
+.navbar-nav .nav-link:not(.contacto-nav) {
+    position: relative;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.navbar-nav .nav-link:not(.contacto-nav) .nav-text {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-nav .nav-link:not(.contacto-nav) .nav-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    /* Subrayado fino */
+    background: #212529;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.navbar-nav .nav-link:not(.contacto-nav):hover .nav-text::after,
+.navbar-nav .nav-link:not(.contacto-nav):focus .nav-text::after {
+    transform: scaleX(1);
+}
+
+/* Animación de subrayado para Aviso Legal en el footer */
+.footer-link-anim {
+    position: relative;
+    display: inline-block;
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-link-anim::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    /* Subrayado fino */
+    background: #212529;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.footer-link-anim:hover,
+.footer-link-anim:focus {
+    color: #212529 !important;
+}
+
+.footer-link-anim:hover::after,
+.footer-link-anim:focus::after {
+    transform: scaleX(1);
+}
+
+/* Añadido o corregido para responsive */
+
+/* Carrusel responsive */
+@media (max-width: 992px) {
+  .carousel img {
+    height: 500px;
   }
 
-  #footer {
-    background-color: #415b76;
+  .carousel-caption h4 {
+    font-size: 1.8rem;
   }
-  
+
+  .carousel-caption p {
+    font-size: 1.1rem;
+  }
+
+  .btn-custom {
+    font-size: 28px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel img {
+    height: 350px;
+  }
+
+  .carousel-caption {
+    padding: 15px;
+    bottom: 15%;
+  }
+
+  .carousel-caption h4 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .btn-custom {
+    font-size: 24px;
+    height: 60px;
+  }
+
+  .card-img-top {
+    height: 300px;
+  }
+
+  .card {
+    max-height: unset;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel img {
+    height: 250px;
+  }
+
+  .carousel-caption {
+    width: 90%;
+    bottom: 10%;
+    padding: 10px;
+  }
+
+  .carousel-caption h4 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+
+  .btn-custom {
+    font-size: 18px;
+    height: 50px;
+    padding: 8px;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+
+  .rest-logo img {
+    width: 70px;
+  }
+
+  .titulo-contacto h1 {
+    font-size: 20px;
+  }
+
+  .titulo-contacto p {
+    font-size: 14px;
+  }
+
+  .contact-form {
+    padding: 20px 15px;
+  }
+
+  .contact-form h2 {
+    font-size: 20px;
+  }
+
+  .contact-form p {
+    font-size: 14px;
+  }
+}
+
+.modal-body i,
+.modal-title i,
+.modal-body,
+.modal-title {
+    color: #2c3e50 !important;
+}
+
+.btn-info-contacto {
+    color: #2c3e50 !important;
+    border: 1px solid #2c3e50 !important;
+    background: transparent !important;
+    font-weight: 400;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.btn-info-contacto:hover,
+.btn-info-contacto:focus {
+    background: #2c3e50 !important;
+    color: #fff !important;
+    border-color: #2c3e50 !important;
+}
+
+.accordion-body {
+    max-height: 1000px;
+}
+
+
+#footer {
+    background-color: #415b76;
+}
+
+/* FORMULARIO */
+.contact-form {
+    max-width: 700px;
+    margin: 60px auto;
+    background-color: #fff;
+    padding: 50px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+button[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.titulo-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 60px 20px 30px;
+    gap: 20px;
+}
+
+.titulo-contacto .linea {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+}
+
+.titulo-contacto .contenido {
+    text-align: center;
+}
+
+.titulo-contacto h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.titulo-contacto p {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 16px;
+    margin: 4px 0 0;
+    color: #444;
+}
+
+.icono-contacto {
+    font-size: 2rem;
+    color: #000;
+    margin-right: 10px;
+}
+
+/* Animación de subrayado para Aviso Legal en el footer */
+.footer-link-anim {
+    position: relative;
+    display: inline-block;
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-link-anim::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    /* Subrayado fino */
+    background: #212529;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.footer-link-anim:hover,
+.footer-link-anim:focus {
+    color: #212529 !important;
+}
+
+.footer-link-anim:hover::after,
+.footer-link-anim:focus::after {
+    transform: scaleX(1);
+}
+
+@media (max-width: 576px) {
+    .contact-form {
+        padding: 30px 10px;
+    }
+
+    .titulo-contacto {
+        flex-direction: column;
+        gap: 10px;
+        padding: 40px 10px 20px;
+    }
+}
+
+.modal-body i,
+.modal-title i,
+.modal-body,
+.modal-title {
+    color: #2c3e50 !important;
+}
+
+.btn-info-contacto {
+    color: #2c3e50 !important;
+    border: 1px solid #2c3e50 !important;
+    background: transparent !important;
+    font-weight: 400;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.btn-info-contacto:hover,
+.btn-info-contacto:focus {
+    background: #2c3e50 !important;
+    color: #fff !important;
+    border-color: #2c3e50 !important;
+}
+
+.accordion-body {
+    max-height: 1000px;
+}
